@@ -1,0 +1,28 @@
+{
+  "name": "aday",
+  "version": "1.0.0",
+  "description": "A Day in the Life",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "postcss ./public/css/pre.css -o ./public/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbuxton1/aday.git"
+  },
+  "author": "Ryan Buxton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rbuxton1/aday/issues"
+  },
+  "homepage": "https://github.com/rbuxton1/aday#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3"
+  }
+}

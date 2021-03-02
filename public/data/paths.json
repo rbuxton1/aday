@@ -1,0 +1,220 @@
+[
+  {
+    "name": "sleep",
+    "text":["You hear your alarm and sleepily reach out to stop it.", "You wake up feeling fresh without the help of your alarm. You reach out and preemptively stop it.", "YEOW! That alarm surprised you today. You reach out and stop it."],
+    "options": [
+      {
+        "target":"sleepin",
+        "text":"Sleep longer"
+      },
+      {
+        "target":"wake",
+        "text":"Wake up"
+      }
+    ]
+  },
+  {
+    "name":"sleepin",
+    "text":["You have a weird fever dream about shaving your mustache. In your delerious state you prod your upper lip to make sure its still there.", "You dreamt about seeing people. It was nice. . .", "A friend you hadnt seen in a long time visited. You should check in with them.", "You were on the lightrail, just listening to music. That was it."],
+    "options":[
+      {
+        "target":"sleepin",
+        "text":"Sleep longer"
+      },
+      {
+        "target":"wake",
+        "text":"Wake up"
+      }
+    ]
+  },
+  {
+    "name":"wake",
+    "text":["Thats probably enough sleep for about an hour.", "You remembered that there is such a thing as sleep poisining and decide that despite that not being the situation here it is best to get up.", "As you slide out of bed you can feel every tendon in your body sore from what mush have been an intense night of sleep running."],
+    "options":[
+      {
+        "target":"breakfast",
+        "text":"You are hungry, maybe you would like to eat something."
+      }
+    ]
+  },
+  {
+    "name":"breakfast",
+    "text":["You stumble out of your room and make it to the kitchen."],
+    "options":[
+      {
+        "target":"breakfast-belvita",
+        "text":"Eat a Bel Vita breakfast bar /thing/."
+      },
+      {
+        "target":"breakfast-clif",
+        "text":"Sometimes a Bel Vita is a little played out. Clifs are more or less the same only different."
+      }
+    ]
+  },
+  {
+    "name":"breakfast-belvita",
+    "text":["Yeah. That was a Bel Vita.", "Alright. Bel Vita time.", "Unfortunately the good flavor was out so you had to eat the lesser liked box that has been around for months now.", "Awesome brekky brah."],
+    "options":[
+      {
+        "target":"shower",
+        "text":"Time to shower."
+      },
+      {
+        "target":"bath",
+        "text":"You really cant beat a bath now and then."
+      }
+    ]
+  },
+  {
+    "name":"breakfast-clif",
+    "text":["Clif Bars are not the standard breakfast, but they do quite well.", "Youre always impressed with how dense Clif Bars are... maybe thats just me."],
+    "options":[
+      {
+        "target":"shower",
+        "text":"Time to shower."
+      },
+      {
+        "target":"bath",
+        "text":"You really cant beat a bath now and then."
+      }
+    ]
+  },
+  {
+    "name":"bath",
+    "text":["Yeah man, that rocks.", "You fill the bath and are left to sit and ponder the universe."],
+    "options":[
+      {
+        "target":"bath",
+        "text":"Keep on keepin on."
+      },
+      {
+        "target":"tasks",
+        "text":"Time to get on with the day."
+      }
+    ]
+  },
+  {
+    "name":"shower",
+    "text":["Always nice to get some thinking done."],
+    "options":[
+      {
+        "target":"shower",
+        "text":"Keep on keepin on."
+      },
+      {
+        "target":"tasks",
+        "text":"Time to get on with the day."
+      }
+    ]
+  },
+  {
+    "name":"tasks",
+    "text":["Life is a cruel task master, that is for sure."],
+    "options":[
+      {
+        "target":"work",
+        "text":"Get some work done!"
+      },
+      {
+        "target":"class",
+        "text":"Online classes"
+      },
+      {
+        "target":"eat",
+        "text":"What a great way to kill time."
+      },
+      {
+        "target":"socialize",
+        "text":"'socialize'"
+      },
+      {
+        "target":"walk",
+        "text":"Go for a walk"
+      },
+      {
+        "target":"drive",
+        "text":"Go for a drive"
+      },
+      {
+        "target":"sleep",
+        "text":"Turn in for the day."
+      }
+    ]
+  },
+  {
+    "name":"work",
+    "text":["Well, at least its something that you can point at and say 'I did that'.", "A friend of mine used to say that creating was our purpose. I think about that when I work.", "One of your colleges cracked a good joke. Youll be thinking about that for the next little while.", "Today, unfortunately, was not the day of days."],
+    "options":[
+      {
+        "target":"work",
+        "text":"Work some more."
+      },
+      {
+        "target":"tasks",
+        "text":"You want to do something else."
+      }
+    ]
+  },
+  {
+    "name":"class",
+    "text":["Your professor requires that you have your camera on for this class. Why? I dont know.", "Theres always one dude in chat who tries hitting on the one baddie with their camera on. Always.", "Yet another class of no consequence.", "You skipped class (whoops).", "You got sidetracked with something far more intersting.", "You know those scenes from The Office that are almost painful to watch? Yeah. Thats this.", "You were just on twitter (whoops).", "Professor has their speakers unplugged and has chat disabled. Your challenge is to get their attention.", "This dude is actually insufferable."],
+    "options":[
+      {
+        "target":"class",
+        "text":"Go to another class."
+      },
+      {
+        "target":"tasks",
+        "text":"You want to do something else."
+      }
+    ]
+  },
+  {
+    "name":"eat",
+    "text":["What a great way to kill time. You make something to eat and watch some guy on youtube camping.", "This meal was about a fourth actually eating and three fourths just watching youtube.", "On the menu today: Ramen and Twitter.", "Someone kept interrupting you."],
+    "options":[
+      {
+        "target":"tasks",
+        "text":"You want to do something else."
+      }
+    ]
+  },
+  {
+    "name":"socialize",
+    "text":["You reach out to some friends and try to coordinate something. It falls through.", "Trying to match digital schedules is particularly hard.", "Its a pandemic dude. What do you expect.", "You ran into someone from your past and were able to have a little convorsation. That was nice.", "Your coordination efforts paid off. You got to see some friends you havent seen in a long time."],
+    "options":[
+      {
+        "target":"tasks",
+        "text":"You want to do something else."
+      }
+    ]
+  },
+  {
+    "name":"walk",
+    "text":["You go wandering."],
+    "options":[
+      {
+        "target":"tasks",
+        "text":"Time to start heading back.."
+      },
+      {
+        "target":"walk",
+        "text":"Keep wondering."
+      }
+    ]
+  },
+  {
+    "name":"drive",
+    "text":["Wandering, but on four wheels."],
+    "options":[
+      {
+        "target":"tasks",
+        "text":"You decide its time to head home."
+      },
+      {
+        "target":"drive",
+        "text":"Keep on going."
+      }
+    ]
+  }
+]
