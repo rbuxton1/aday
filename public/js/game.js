@@ -21,6 +21,23 @@ async function print(data){
 }
 
 async function intro(){
+  await print("System boot up. . .");
+  await sleep(250);
+
+  var things = ["discombobulator", "hampster", "disco engine", "FFAFO principles", "the Caramelldansen Girls", "a wizard", "The Wizard", "magic smoke", "terain", "a miniature clone of myself", "the universe"];
+  var verbs =["Preparing", "Initializing", "Loading", "Perfecting", "Diagnosing", "Optimizing", "Generating"];
+  for(var i = 0; i < things.length; i++){
+    var thing = things[i];
+    var verb = verbs[Math.floor(Math.random() * verbs.length)]
+    await print("\t" + verb + " " + thing + " . . .");
+    await sleep(100 + Math.floor(Math.random() * 250));
+    await print("\t\tDONE.");
+  }
+
+  await print("Boot complete. Starting aday.");
+  await sleep(1500);
+  $("#output").val("");
+
   await print("aday version 1.0 loaded.");
   await print("Hello and welcome. Type 'help' for a list of commands or 'about' to learn what this is.");
   await print("Loaded " + commands.length + " commands.");

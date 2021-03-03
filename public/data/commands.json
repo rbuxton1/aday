@@ -18,5 +18,9 @@
   {
     "name": "load",
     "helptext": "Loads the game. Default file is 'data/paths.json'."
+  },
+  {
+    "name":"whoami",
+    "helptext":"Print current user."
   }
 ]
