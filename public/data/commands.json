@@ -14,5 +14,9 @@
   {
     "name": "about",
     "helptext": "Tells you more about this. . . /thing/."
+  },
+  {
+    "name": "load",
+    "helptext": "Loads the game. Default file is 'data/paths.json'."
   }
 ]

@@ -4,6 +4,7 @@ var state = {
   mode: "init",
   current: "sleep"
 }
+var args = [];
 
 function sleep(ms){
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -20,12 +21,13 @@ async function print(data){
 }
 
 async function intro(){
-  await print("Hello and welcome. Type 'help' for instructions, or 'begin' to begin.");
-  await print("Loaded " + commands.length + " commands and " + paths.length + " game paths.");
+  await print("Hello and welcome. Type 'help' for a list of commands or 'about' to learn what this is.");
+  await print("Loaded " + commands.length + " commands.");
 }
 
 async function process(commandString){
-  var c = commands.find(command => { return command.name == commandString });
+  args = commandString.split(" ");
+  var c = commands.find(command => { return command.name == args[0].toLowerCase() });
   if(c) {
     await print("> " + c.name);
     $.getScript("js/commands/" + c.name + ".js", function(){ console.log(c.name); });
@@ -56,21 +58,26 @@ async function game(commandString){
   $("#prompt").val("");
 }
 
+async function printError(errorText){
+  await print("\t" + errorText);
+}
+
 $(document).ready(() => {
   console.log("ready");
 
   $.getJSON("data/commands.json", (json) => {
-    $.getJSON("data/paths.json", (p) => {
-      paths = p;
-      commands = json;
-      intro();
-    });
+    commands = json;
+    intro();
   });
 
   $("#prompt").on('keyup', function (e) {
     if ((e.key === 'Enter' || e.keyCode === 13) && $("#prompt").val() != "") {
-      if(state.mode == "init") process($("#prompt").val());
-      else if(state.mode == "game") game($("#prompt").val());
+      try{
+        if(state.mode == "init") process($("#prompt").val());
+        else if(state.mode == "game") game($("#prompt").val());
+      } catch(error){
+        printError(error);
+      }
     }
   });
 });
