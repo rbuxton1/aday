@@ -24,7 +24,7 @@ async function intro(){
   await print("System boot up. . .");
   await sleep(250);
 
-  var things = ["discombobulator", "hampster", "disco engine", "FFAFO principles", "the Caramelldansen Girls", "a wizard", "The Wizard", "magic smoke", "terain", "a miniature clone of myself", "the universe"];
+  var things = ["discombobulator", "hampster", "disco engine", "bullshit", "the Caramelldansen Girls", "a wizard", "The Wizard", "magic smoke", "terrain", "a miniature clone of myself", "the universe"];
   var verbs =["Preparing", "Initializing", "Loading", "Perfecting", "Diagnosing", "Optimizing", "Generating"];
   for(var i = 0; i < things.length; i++){
     var thing = things[i];
@@ -38,7 +38,7 @@ async function intro(){
   await sleep(1500);
   $("#output").val("");
 
-  await print("aday version 1.0 loaded.");
+  await print("aday version 1.1.0 loaded.");
   await print("Hello and welcome. Type 'help' for a list of commands or 'about' to learn what this is.");
   await print("Loaded " + commands.length + " commands.");
 }
@@ -71,7 +71,7 @@ async function game(commandString){
     }
   } else {
     state.mode = "init";
-    await print("Exiting COVID-19 Depression Simulator.")
+    await print("Exiting.")
   }
   $("#prompt").val("");
 }
