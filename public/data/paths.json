@@ -1,7 +1,7 @@
 [
   {
     "name": "sleep",
-    "text":["You hear your alarm and sleepily reach out to stop it.", "You wake up feeling fresh without the help of your alarm. You reach out and preemptively stop it.", "YEOW! That alarm surprised you today. You reach out and stop it."],
+    "text":["You hear your alarm and sleepily reach out to stop it.", "You wake up feeling fresh without the help of your alarm. You reach out and preemptively stop it.", "YEOW! That alarm surprised you today. You reach out and stop it.", "That time again."],
     "options": [
       {
         "target":"sleepin",
@@ -15,7 +15,7 @@
   },
   {
     "name":"sleepin",
-    "text":["You have a weird fever dream about shaving your mustache. In your delerious state you prod your upper lip to make sure its still there.", "You dreamt about seeing people. It was nice. . .", "A friend you hadnt seen in a long time visited. You should check in with them.", "You were on the lightrail, just listening to music. That was it."],
+    "text":["You have a weird fever dream about shaving your mustache. In your delerious state you prod your upper lip to make sure its still there.", "You dreamt about seeing people. It was nice. . .", "A friend you hadnt seen in a long time visited. You should check in with them.", "You were on the lightrail, just listening to music. That was it.", "Sometimes when you try to sleep in it feels like the world is doing everything to keep it from being peaceful."],
     "options":[
       {
         "target":"sleepin",
@@ -29,7 +29,7 @@
   },
   {
     "name":"wake",
-    "text":["Thats probably enough sleep for about an hour.", "You remembered that there is such a thing as sleep poisining and decide that despite that not being the situation here it is best to get up.", "As you slide out of bed you can feel every tendon in your body sore from what mush have been an intense night of sleep running."],
+    "text":["Thats probably enough sleep for about an hour.", "You remembered that there is such a thing as sleep poisining and decide that despite that not being the situation here it is best to get up.", "As you slide out of bed you can feel every tendon in your body sore from what mush have been an intense night of sleep running.", "You slide out of bed kinda like how a good pancake slides out of a hot pan onto a plate."],
     "options":[
       {
         "target":"breakfast",
@@ -39,7 +39,7 @@
   },
   {
     "name":"breakfast",
-    "text":["You stumble out of your room and make it to the kitchen."],
+    "text":["You stumble out of your room and make it to the kitchen.", "Oh boy, oh boy, I sure hope its not the same two meals! Wait. . .", "Morning thoughts are some of the weirdest. Why?", "I wonder who originally thought of the breakfast bar idea."],
     "options":[
       {
         "target":"breakfast-belvita",
@@ -53,7 +53,7 @@
   },
   {
     "name":"breakfast-belvita",
-    "text":["Yeah. That was a Bel Vita.", "Alright. Bel Vita time.", "Unfortunately the good flavor was out so you had to eat the lesser liked box that has been around for months now.", "Awesome brekky brah."],
+    "text":["Yeah. That was a Bel Vita.", "Alright. Bel Vita time.", "Unfortunately the good flavor was out so you had to eat the lesser liked box that has been around for months now.", "Awesome brekky brah.", "Bar shaped breakfast, hell yeah."],
     "options":[
       {
         "target":"shower",
@@ -67,7 +67,7 @@
   },
   {
     "name":"breakfast-clif",
-    "text":["Clif Bars are not the standard breakfast, but they do quite well.", "Youre always impressed with how dense Clif Bars are... maybe thats just me."],
+    "text":["Clif Bars are not the standard breakfast, but they do quite well.", "Youre always impressed with how dense Clif Bars are... maybe thats just me.", "The bar shape make it taste better.", "What is your favorite Clif flavor and why is it chocolate chip?"],
     "options":[
       {
         "target":"shower",
@@ -81,7 +81,7 @@
   },
   {
     "name":"bath",
-    "text":["Yeah man, that rocks.", "You fill the bath and are left to sit and ponder the universe."],
+    "text":["Yeah man, that rocks.", "You fill the bath and are left to sit and ponder the universe.", "The cool thing about baths is you can be on your phone the whole time."],
     "options":[
       {
         "target":"bath",
@@ -95,7 +95,7 @@
   },
   {
     "name":"shower",
-    "text":["Always nice to get some thinking done."],
+    "text":["Always nice to get some thinking done.", "The album you put on sucks. You want to get out and change it but the phone is across the room.", "The album you put on rocks. Youre dancing more than you are washing.", "Shower thought. . . I wonder if that phrase was a shower thought. Mmmm.", "mmmmmmmmmmmmmmMmmmmmm", "sahhh brah. Right?"],
     "options":[
       {
         "target":"shower",
@@ -109,7 +109,7 @@
   },
   {
     "name":"tasks",
-    "text":["Life is a cruel task master, that is for sure."],
+    "text":["Life is a cruel task master, that is for sure.", "What is life if not a collection of tireless tasks?", "The meat of the day.", "Its weird to think that each of your days can be boiled down to a short list like this.", "If you werent already having existential dread, you should be now.", "Welcome to a day in the life of (you)."],
     "options":[
       {
         "target":"work",
@@ -143,7 +143,7 @@
   },
   {
     "name":"work",
-    "text":["Well, at least its something that you can point at and say 'I did that'.", "A friend of mine used to say that creating was our purpose. I think about that when I work.", "One of your colleges cracked a good joke. Youll be thinking about that for the next little while.", "Today, unfortunately, was not the day of days."],
+    "text":["Well, at least its something that you can point at and say 'I did that'.", "A friend of mine used to say that creating was our purpose. I think about that when I work.", "One of your colleges cracked a good joke. Youll be thinking about that for the next little while.", "Today, unfortunately, was not the day of days.", "Work in a pandemic is weird. You miss seeing people.", "Your coworkers are nice. Youre feeling marginally better than when you started."],
     "options":[
       {
         "target":"work",
@@ -171,7 +171,7 @@
   },
   {
     "name":"eat",
-    "text":["What a great way to kill time. You make something to eat and watch some guy on youtube camping.", "This meal was about a fourth actually eating and three fourths just watching youtube.", "On the menu today: Ramen and Twitter.", "Someone kept interrupting you."],
+    "text":["What a great way to kill time. You make something to eat and watch some guy on youtube camping.", "This meal was about a fourth actually eating and three fourths just watching youtube.", "On the menu today: Ramen and Twitter.", "Someone kept interrupting you.", "The kitchen always seems to be a point of contention. Why? Its a big room. Cant we all just cook our own things?"],
     "options":[
       {
         "target":"tasks",
@@ -181,7 +181,7 @@
   },
   {
     "name":"socialize",
-    "text":["You reach out to some friends and try to coordinate something. It falls through.", "Trying to match digital schedules is particularly hard.", "Its a pandemic dude. What do you expect.", "You ran into someone from your past and were able to have a little convorsation. That was nice.", "Your coordination efforts paid off. You got to see some friends you havent seen in a long time."],
+    "text":["You reach out to some friends and try to coordinate something. It falls through.", "Trying to match digital schedules is particularly hard.", "Its a pandemic dude. What do you expect.", "You ran into someone from your past and were able to have a little convorsation. That was nice.", "Your coordination efforts paid off. You got to see some friends you havent seen in a long time.", "You write an email. Yeah, human interaction!", "It takes a lot out of you, but you reply to some texts that have sat unread on your phone for about a month."],
     "options":[
       {
         "target":"tasks",
@@ -191,7 +191,7 @@
   },
   {
     "name":"walk",
-    "text":["You go wandering."],
+    "text":["You go wandering.", "You feel like you think best when you are walking.", "The album you put on before leaving rocks. Its really putting a skip in your step.", "Have you ever had one of those days where nothing you play sounds right? Unfortunately today is one of those days.", "You look out infront of you at the brick horizon. You are filled with a sense of wonder.", "The number of people wearing masks at the park could be counted in the void.", "Surprisingly, there are a couple people with masks on. Maybe we will be free one day.", "Frisbee golf? Why?"],
     "options":[
       {
         "target":"tasks",
@@ -205,7 +205,7 @@
   },
   {
     "name":"drive",
-    "text":["Wandering, but on four wheels."],
+    "text":["Wandering, but on four wheels.", "Driving, besides the fact that you are wasting natural resourses, kinda rocks.", "Nothing like some one person car kareokee where it does not matter if you know the words.", "You drive for long enough that you start disassociating, you catch yourself before you drifted too much.", "For some reason you were convinced that the roads were going to be terrible. You were thankfully wrong.", "You hear a new noise coming from the car. Could this be the one?", "You passed a car with the lisence plate 'PP GONE'. You hope they are doing well today", "There goes someone in a loud subaru. Why?", "Youre surprised that the car in the lane next to you is still holding together. You wish it would stop pacing you for when it inevitably explodes into a million little peices."],
     "options":[
       {
         "target":"tasks",

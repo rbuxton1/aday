@@ -21,6 +21,7 @@ async function print(data){
 }
 
 async function intro(){
+  await print("aday version 1.0 loaded.");
   await print("Hello and welcome. Type 'help' for a list of commands or 'about' to learn what this is.");
   await print("Loaded " + commands.length + " commands.");
 }
